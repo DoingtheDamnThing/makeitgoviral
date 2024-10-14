@@ -1,4 +1,4 @@
-/* General Styling */
+ /* General Styling */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -51,35 +51,44 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Main Container Styling */
+/* Home Page Image Styling */
+#home-image {
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Centralizing the Content */
 .container {
-    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .container h2 {
-    font-size: 36px;
+    font-size: 32px;
     color: #ff4081;
     margin-bottom: 20px;
 }
 
-.container p {
+.container p, .container ul {
     font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto;
     line-height: 1.8;
+    margin: 20px 0;
 }
 
-.container img {
-    width: 350px;
-    margin-top: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
+.container ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.container img:hover {
-    transform: scale(1.05);
+.container ul li {
+    margin-bottom: 10px;
 }
 
 /* Footer Styling */
@@ -89,67 +98,3 @@ footer {
     padding: 15px;
     text-align: center;
     font-size: 14px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Button Styling */
-button {
-    background-color: #ff4081;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #e5306e;
-}
-
-/* High-Tech Animation */
-@keyframes neonGlow {
-    0% {
-        text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081;
-    }
-    50% {
-        text-shadow: 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081;
-    }
-    100% {
-        text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081;
-    }
-}
-
-h1 {
-    animation: neonGlow 2s infinite alternate;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-    .container img {
-        width: 100%;
-    }
-}
-.hero-image {
-    width: 350px;
-    margin-top: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
-}
-
-.hero-image:hover {
-    transform: scale(1.05);
-}
