@@ -1,160 +1,12 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Make It Go Viral - Home</title>
-    <style>
-        /* General Styling */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #1e1e2f;
-    color: #ffffff;
-}
-
-/* Header Styling */
-header {
-    background-color: #101021;
-    color: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 32px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    padding: 10px 15px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #ff4081;
-    border-radius: 5px;
-}
-
-/* Main Container Styling */
-.container {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.container h2 {
-    font-size: 36px;
-    color: #ff4081;
-    margin-bottom: 20px;
-}
-
-.container p {
-    font-size: 18px;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
-}
-
-.container img {
-    width: 350px;
-    margin-top: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
-}
-
-.container img:hover {
-    transform: scale(1.05);
-}
-
-/* Footer Styling */
-footer {
-    background-color: #101021;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 14px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Button Styling */
-button {
-    background-color: #ff4081;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #e5306e;
-}
-
-/* High-Tech Animation */
-@keyframes neonGlow {
-    0% {
-        text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081;
-    }
-    50% {
-        text-shadow: 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081;
-    }
-    100% {
-        text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081;
-    }
-}
-
-h1 {
-    animation: neonGlow 2s infinite alternate;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-    .container img {
-        width: 100%;
-    }
-}
-
-    </style>
+    <title>Make It Go Viral - AI Copilot</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
         <h1>Make It Go Viral</h1>
         <nav>
@@ -163,20 +15,33 @@ h1 {
                 <li><a href="about.html">About</a></li>
                 <li><a href="how-it-works.html">How It Works</a></li>
                 <li><a href="ai-tools.html">AI Tools</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <h2>Welcome to the Community for Creators!</h2>
-        <p>At "Make It Go Viral," we're empowering creators with AI tools and community support to achieve viral success.</p>
-        <img src="canva-MAGD2eRpIkg.jpg" alt="Person smiling and using their phone">
+        <h2>Make it go viral, welcome to the community for creators</h2>
+        <img src="canva-MAGD2eRpIkg.jpg" alt="Person smiling and using a phone" class="home-image">
+
+        <!-- Add AI Copilot Section -->
+        <h2>Your Personal AI Copilot</h2>
+        <p>Ask the AI Copilot for help with content creation, suggestions, or questions!</p>
+
+        <div class="copilot-box">
+            <textarea id="user-input" placeholder="Type your question or request here..."></textarea>
+            <button id="ask-btn">Ask Copilot</button>
+        </div>
+
+        <div class="response-box">
+            <h3>Copilot Response:</h3>
+            <p id="response-output">Your AI assistant’s response will appear here...</p>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Make It Go Viral - All rights reserved.</p>
+        <p>© 2024 Make It Go Viral. All Rights Reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
