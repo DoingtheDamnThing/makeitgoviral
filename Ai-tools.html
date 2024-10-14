@@ -44,27 +44,26 @@
         }
 
         .ai-tools-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between; /* Adjust spacing between items */
+            list-style-type: none;
+            padding: 0;
         }
 
         .ai-tools-list li {
             background-color: #f0f0f0;
             border: 1px solid #ccc;
             border-radius: 10px;
-            width: 30%; /* 3 items per row */
-            margin: 1rem 0; /* Margin for vertical spacing */
+            margin: 1rem 0;
             padding: 1rem;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            box-sizing: border-box; /* Ensure padding doesn't affect width */
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
         }
 
         .tool-logo {
-            max-width: 80%; /* Responsive logo size */
+            max-width: 100px; /* Set a max width for the logos */
             height: auto;
-            margin-bottom: 1rem;
+            margin-right: 1rem; /* Space between logo and text */
         }
 
         footer {
@@ -72,19 +71,6 @@
             padding: 1rem;
             background-color: #333;
             color: white;
-        }
-
-        /* Responsive design for smaller screens */
-        @media (max-width: 768px) {
-            .ai-tools-list li {
-                width: 45%; /* 2 items per row */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .ai-tools-list li {
-                width: 100%; /* 1 item per row */
-            }
         }
     </style>
 </head>
@@ -106,59 +92,87 @@
         <ul class="ai-tools-list">
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Adobe_Creative_Cloud_logo.svg/2560px-Adobe_Creative_Cloud_logo.svg.png" alt="Adobe Creative Cloud Logo" class="tool-logo">
-                <span><strong>Adobe Creative Cloud:</strong> A suite of tools for video editing, graphic design, and more, utilizing AI for automation and creative assistance.</span>
+                <div>
+                    <strong>Adobe Creative Cloud:</strong> A suite of tools for video editing, graphic design, and more, utilizing AI for automation and creative assistance.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Canva_logo.svg/2560px-Canva_logo.svg.png" alt="Canva Pro Logo" class="tool-logo">
-                <span><strong>Canva Pro:</strong> A design platform that uses AI to offer templates, design suggestions, and image editing tools for content creators.</span>
+                <div>
+                    <strong>Canva Pro:</strong> A design platform that uses AI to offer templates, design suggestions, and image editing tools for content creators.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Premiere_Pro_logo.svg/2560px-Premiere_Pro_logo.svg.png" alt="Adobe Premiere Pro Logo" class="tool-logo">
-                <span><strong>Adobe Premiere Pro:</strong> A professional video editing tool that integrates AI for features like auto-reframe and scene edit detection.</span>
+                <div>
+                    <strong>Adobe Premiere Pro:</strong> A professional video editing tool that integrates AI for features like auto-reframe and scene edit detection.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Artlist_logo.png/2560px-Artlist_logo.png" alt="Artlist Logo" class="tool-logo">
-                <span><strong>Artlist:</strong> A music licensing platform that uses AI to recommend tracks based on your video content.</span>
+                <div>
+                    <strong>Artlist:</strong> A music licensing platform that uses AI to recommend tracks based on your video content.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/79/Animoto_Logo.svg/1024px-Animoto_Logo.svg.png" alt="Animoto Logo" class="tool-logo">
-                <span><strong>Animoto:</strong> A video creation service that utilizes AI to automate video editing processes and suggest styles.</span>
+                <div>
+                    <strong>Animoto:</strong> A video creation service that utilizes AI to automate video editing processes and suggest styles.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Descript_logo.svg/2560px-Descript_logo.svg.png" alt="Descript Logo" class="tool-logo">
-                <span><strong>Descript:</strong> An audio/video editing software that uses AI for transcription, making editing more efficient and intuitive.</span>
+                <div>
+                    <strong>Descript:</strong> An audio/video editing software that uses AI for transcription, making editing more efficient and intuitive.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/DeepArt_logo.png/2560px-DeepArt_logo.png" alt="DeepArt Logo" class="tool-logo">
-                <span><strong>DeepArt:</strong> An AI tool that transforms photos into artworks, helping creators enhance their visual content.</span>
+                <div>
+                    <strong>DeepArt:</strong> An AI tool that transforms photos into artworks, helping creators enhance their visual content.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/RunwayML_logo.svg/2560px-RunwayML_logo.png" alt="RunwayML Logo" class="tool-logo">
-                <span><strong>RunwayML:</strong> A creative suite that offers AI tools for real-time collaboration and video editing capabilities.</span>
+                <div>
+                    <strong>RunwayML:</strong> A creative suite that offers AI tools for real-time collaboration and video editing capabilities.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lumen5_logo.png/2560px-Lumen5_logo.png" alt="Lumen5 Logo" class="tool-logo">
-                <span><strong>Lumen5:</strong> An AI-powered video creation platform that transforms text into engaging videos quickly.</span>
+                <div>
+                    <strong>Lumen5:</strong> An AI-powered video creation platform that transforms text into engaging videos quickly.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Magisto_Logo.png/2560px-Magisto_Logo.png" alt="Magisto Logo" class="tool-logo">
-                <span><strong>Magisto:</strong> An AI-driven video editing app that creates videos automatically based on uploaded footage and desired styles.</span>
+                <div>
+                    <strong>Magisto:</strong> An AI-driven video editing app that creates videos automatically based on uploaded footage and desired styles.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Artbreeder_logo.png/2560px-Artbreeder_logo.png" alt="Artbreeder Logo" class="tool-logo">
-                <span><strong>Artbreeder:</strong> A collaborative platform that uses AI to generate and remix images, ideal for visual content creators.</span>
+                <div>
+                    <strong>Artbreeder:</strong> A collaborative platform that uses AI to generate and remix images, ideal for visual content creators.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/DeepAI_logo.png/2560px-DeepAI_logo.png" alt="DeepAI Logo" class="tool-logo">
-                <span><strong>DeepAI:</strong> Offers various AI tools for image and video generation, including deep learning-based enhancements for creators.</span>
+                <div>
+                    <strong>DeepAI:</strong> Offers various AI tools for image and video generation, including deep learning-based enhancements for creators.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/69/Wavve_logo.png/2560px-Wavve_logo.png" alt="Wavve Logo" class="tool-logo">
-                <span><strong>Wavve:</strong> A platform that turns audio clips into shareable videos with waveform animations, powered by AI.</span>
+                <div>
+                    <strong>Wavve:</strong> A platform that turns audio clips into shareable videos with waveform animations, powered by AI.
+                </div>
             </li>
             <li>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Synthesia_logo.png/2560px-Synthesia_logo.png" alt="Synthesia Logo" class="tool-logo">
-                <span><strong>Synthesia:</strong> An AI video generation platform that allows users to create videos from text using AI-generated avatars.</span>
+                <div>
+                    <strong>Synthesia:</strong> An AI video generation platform that allows users to create videos from text using AI-generated avatars.
+                </div>
             </li>
         </ul>
     </main>
