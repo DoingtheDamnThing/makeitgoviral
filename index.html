@@ -6,72 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Make It Go Viral - Home</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+        /* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f;
+    color: #ffffff;
+}
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
+/* Header Styling */
+header {
+    background-color: #101021;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        nav ul li {
-            margin: 0 15px;
-        }
+nav ul li {
+    margin: 0 20px;
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-        }
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
 
-        .container {
-            padding: 20px;
-            text-align: center;
-        }
+nav ul li a:hover {
+    background-color: #ff4081;
+    border-radius: 5px;
+}
 
-        .container h2 {
-            font-size: 28px;
-            color: #333;
-        }
+/* Main Container Styling */
+.container {
+    padding: 60px 20px;
+    text-align: center;
+}
 
-        .container img {
-            width: 300px;
-            margin: 20px 0;
-            border-radius: 10px;
-        }
+.container h2 {
+    font-size: 36px;
+    color: #ff4081;
+    margin-bottom: 20px;
+}
 
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+.container p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
 
-        footer p {
-            margin: 0;
-        }
+.container img {
+    width: 350px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #101021;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Button Styling */
+button {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #e5306e;
+}
+
+/* High-Tech Animation */
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff4081, 0 0 30px #ff4081, 0 0 40px #ff4081;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff4081, 0 0 20px #ff4081, 0 0 30px #ff4081;
+    }
+}
+
+h1 {
+    animation: neonGlow 2s infinite alternate;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .container img {
+        width: 100%;
+    }
+}
+
     </style>
 </head>
 <body>
